@@ -1,2 +1,0 @@
-# codelabswebsite
-Website for codelabs
