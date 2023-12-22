@@ -5,108 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Labs Academy - Embark on Your Coding Journey</title>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'/>    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>    
     <link rel="stylesheet" href="{% static 'website/styles.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"><!-- Ensure you have a favicon.ico -->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="{% static 'website/images/i.jpeg' %}" alt="Code Labs Academy Logo" class="logo"><!-- Ensure you have a logo.png -->
-            <nav>
-                <!-- Navigation bar -->
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <button id="language-toggle" class="language-toggle">Language</button>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- Home section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Embark on Your Coding Journey!</h1>
-                <p>Welcome to Code Labs Academy, the ultimate hub where programmers of all levels come together to learn, grow, and excel.</p>
-                <a href="#contact" class="btn">Contact Us Now!</a>
-            </div>
-        </section>
-
-        <!-- About Us section -->
-        <section id="about">
-            <div class="container">
-                <h2>Why Choose Us as Your Coding Partner?</h2>
-                <p>At Code Labs, we offer diverse and comprehensive course offerings tailored for every skill level in a bilingual and inclusive environment.</p>
-            </div>
-        </section>
-
-        <!-- Courses section -->
-        <section id="courses">
-            <div class="container">
-                <h2>Our Courses</h2>
-                <p>From curious beginners to seasoned coding wizards, our courses are designed to empower your coding skills.</p>
-                <!-- Course listings or details -->
-            </div>
-        </section>
-
-        <!-- Contact section -->
-        <section id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Join our vibrant community of passionate learners. Have any questions? Reach out to us via WhatsApp or schedule a meeting today.</p>
-                <!-- Contact form or details -->
-            </div>
-        </section>
-        <!-- Testimonials section -->
-<section id="testimonials">
-    <div class="container">
-        <h2>What Our Students Say</h2>
-        <div class="testimonial-wrapper">
-            <!-- Testimonial 1 -->
-            <div class="testimonial">
-                <p>"This has been the best technology course my son has ever taken. Don't be deterred by the price; it's truly the best investment I've made for his future."</p>
-                <span>- Satisfied Parent</span>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="testimonial">
-                <p>"Your assistance has been outstanding, and my son found the classes you provided to be immensely beneficial. He has discovered a hidden passion, all thanks to you."</p>
-                <span>- Grateful Parent</span>
-            </div>
-            <!-- Testimonial 3 -->
-            <div class="testimonial">
-                <p>"I absolutely loved the class. It's been a transformative experience, introducing me to a new language. Through it, I've grasped its versatility and potential. With the projects I've undertaken, I feel equipped to demonstrate a breadth of experience."</p>
-                <span>- Enthusiastic Student</span>
-            </div>
-            <!-- Testimonial 4 -->
-            <div class="testimonial">
-                <p>"I walked in with no prior knowledge of programming or program development but walked out with a portfolio of projects I proudly programmed myself."</p>
-                <span>- Proud Novice</span>
-            </div>
-            <!-- Testimonial 5 -->
-            <div class="testimonial">
-                <p>"I now possess knowledge that captivates others. When I discuss what I've learned about programming, people listen with keen interest."</p>
-                <span>- Inspired Learner</span>
-            </div>
+    <div class="bg-circle first-circle"></div>    
+    <div class="bg-circle second-circle"></div>    
+    <div class="bg-circle third-circle"></div>    
+    <div class="bg-circle fourth-circle"></div>
+    
+    <div class="header">
+        <img src="{% static 'website/images/logo.png' %}" alt="Code Labs Academy Logo" class="logo">
+        <div class="navbar">
+            <a href="" class="navbar-ref">ABOUT</a>
+            <a href="" class="navbar-ref">PRODUCTS</a>
+            <a href="" class="navbar-ref">CONTACT</a>
+            <a href="" class="navbar-ref schedule-button"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                <circle cx="8.5" cy="9" r="8.5" fill="#9091DC"/>
+                </svg>SCHEDULE A MEETING</a>
         </div>
     </div>
-</section>
 
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Code Labs Academy - All Rights Reserved</p>
-            <p>Programming Courses - Panama City, Panama</p>
-            <div class="social-links">
-                <!-- Social links -->
-                <a href="#">Instagram</a>
-                <a href="#">WhatsApp</a>
-            </div>
+    <div class="hero">
+        <div class="about">
+            <h1>Embark</h1>
+            <h1>In Your</h1>
+            <h1>Coding</h1>
+            <h1>Journey</h1>
+            <p>The most efficient way to learn programming, and create the project of your dreams. </p>
+            <button>OUR PRODUCT</button>
         </div>
-    </footer>
+    </div>
 
     <script src="{% static 'website/js/scripts.js' %}"></script>
 </body>

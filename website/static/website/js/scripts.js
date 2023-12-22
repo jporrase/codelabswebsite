@@ -68,12 +68,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('slide-in');
             } else {
-                entry.target.classList.remove('slide-in'); // You can add this line to remove the class if it goes out of view
+                entry.target.classList.remove('slide-in');
             }
         });
     }, {
         rootMargin: '0px',
-        threshold: 0.1 // You may want to experiment with this value
+        threshold: 0.1
     });
 
     document.querySelectorAll('.testimonial').forEach(testimonial => {
@@ -81,4 +81,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-// You might need to add some CSS for .nav-toggle, .back-to-top, and .slide-in
