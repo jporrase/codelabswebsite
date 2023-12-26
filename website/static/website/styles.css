@@ -610,3 +610,7 @@ button:hover{
 .hero-image-container img:nth-child(3) {
   animation-delay: 1.6s;
 }
+
+#Setmore_button_iframe{
+    display:none!important;
+}
