@@ -9,6 +9,12 @@ body, h1, h2, h3, p, ul, li, a, .container, img {
     color: #FFF;
     font-family: Outfit;
     vertical-align: baseline;
+    
+}
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Box-sizing for all elements */
@@ -65,6 +71,10 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     width: 4px;
     background: #FEC917;
+}
+
+.content{
+    padding:8% 13%;
 }
 .bg-circle{
     position: absolute;
@@ -157,10 +167,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     gap:19.56%;
 }
-.about{
-    margin-left: 13%;
-    margin-top: 8%;
-}
+
 .about p{
     margin-top: 16px;
     width:373px;
@@ -193,7 +200,6 @@ button:hover{
 .hero-image-container{
     position: relative;
     display: flex;
-    margin-top: 8%;
     float:right;
     width: 511px;
     height: 544px;
@@ -230,7 +236,6 @@ button:hover{
 
 .featured-programs-container{
     width: 100%;
-    padding: 0 13%;
     margin-top: 81px;
 }
 .featured-programs-container p{
@@ -266,7 +271,6 @@ button:hover{
 }
 .course-structure-container{
     width: 100%;
-    padding: 0 13%;
     margin-top: 81px;
     position: relative;
 }
@@ -296,7 +300,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px 13%;
+    padding: 16px 0;
     text-align: center;
     gap:16px;
     min-height: 308px;
@@ -331,7 +335,7 @@ button:hover{
 }
 .course-structure-container svg{
     position: absolute;
-    left:6%;
+    left:-6%;
     top:8%;
 }
 .testimonials-container{
@@ -340,7 +344,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding:0 13%;
+    padding:00;
     text-align: center;
 }
 .testimonials-title{
@@ -399,7 +403,7 @@ button:hover{
     text-transform: uppercase;
 }
 .schedule-box{
-    margin:128px 13%;
+    margin:128px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,7 +453,7 @@ button:hover{
 .footer{
     display: flex;
     flex-direction: row;
-    padding:0 13%;
+    padding:0 0;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -613,4 +617,45 @@ button:hover{
 
 #Setmore_button_iframe{
     display:none!important;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.projects p,.contact p, .about-us p{
+    margin-top:16px;
+}
+.col-60{
+    padding-right: 1em;
+    flex:3;
+    box-sizing: border-box;
+}
+.col-40{
+    flex:2;
+    box-sizing: border-box;
+}
+
+/* Optional: Add margin to create space between columns */
+.col + .col {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+.projects img,.contact img, .about img{
+    width: 360px;
+}
+
+.product-subheader{
+    color: #FFF;
+
+    /* SUB HEADER */
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.5px; /* 137.5% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }

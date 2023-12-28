@@ -1,0 +1,13 @@
+<div class="header">
+    {% load static %}
+    <img src="{% static 'website/images/logo.png' %}" alt="Code Labs Academy Logo" class="logo">
+    <div class="navbar">
+        <a href="{% url 'about' %}" class="navbar-ref">ABOUT</a>
+        <a href="{% url 'product' %}" class="navbar-ref">PRODUCTS</a>
+        <a href="{% url 'contact' %}" class="navbar-ref">CONTACT</a>
+        <a href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5" class="navbar-ref schedule-button"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+            <circle cx="8.5" cy="9" r="8.5" fill="#9091DC"/>
+        </svg>SCHEDULE A MEETING</a>
+        <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000" id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png" alt="Book an appointment with Juan Raul using Setmore"/></a>
+    </div>
+</div>

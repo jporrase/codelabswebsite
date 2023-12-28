@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Labs Academy - Embark on Your Coding Journey</title>
+        {% load static %}   
+        <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'/>    
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>    
+        <link rel="stylesheet" href="{% static 'website/styles.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+</head>
+<body>
+    {% include 'website/navbar.html' %}
+    <div class="content">
+        <div class="bg-circle first-circle"></div>    
+        <div class="bg-circle second-circle"></div>    
+        <div class="bg-circle third-circle"></div>    
+        <div class="bg-circle fourth-circle"></div>
+        {% block content %}
+
+        {% endblock %}
+        <div class="footer">
+            <div class="footer-col">
+                <p class="footer-col-title codelabs-title">Code Labs Academy</p>
+                <div class="col-content">
+                    <a href="" class="footer-link">Home</a>
+                    <a href="" class="footer-link">About</a>
+                    <a href="" class="footer-link">Course</a>
+                    <a href="" class="footer-link">Benefits</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Content</p>
+                <div class="col-content">
+                    <a href="" class="footer-link">Browse</a>
+                    <a href="" class="footer-link">Projects</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Contact</p>
+                <div class="col-content">
+                    <a href="" class="footer-link">Email</a>
+                    <a href="" class="footer-link">LinkedIn</a>
+                    <a href="" class="footer-link">Instagram</a>
+                    <a href="" class="footer-link">X</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title newsletter-title">Join our newsletter</p>
+                <div class="col-content">
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

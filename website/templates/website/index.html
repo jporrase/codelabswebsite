@@ -1,43 +1,19 @@
-<!DOCTYPE html>
+{% extends 'website/main.html' %}
+
+
+{% block content %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Labs Academy - Embark on Your Coding Journey</title>
-    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'/>    
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>    
-    <link rel="stylesheet" href="{% static 'website/styles.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
-</head>
-<body>
-    <div class="bg-circle first-circle"></div>    
-    <div class="bg-circle second-circle"></div>    
-    <div class="bg-circle third-circle"></div>    
-    <div class="bg-circle fourth-circle"></div>
-    
-    <div class="header">
-        <img src="{% static 'website/images/logo.png' %}" alt="Code Labs Academy Logo" class="logo">
-        <div class="navbar">
-            <a href="" class="navbar-ref">ABOUT</a>
-            <a href="" class="navbar-ref">PRODUCTS</a>
-            <a href="" class="navbar-ref">CONTACT</a>
-            <a href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5" class="navbar-ref schedule-button"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-                <circle cx="8.5" cy="9" r="8.5" fill="#9091DC"/>
-            </svg>SCHEDULE A MEETING</a>
-            <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000" id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png" alt="Book an appointment with Juan Raul using Setmore"/></a>
-        </div>
+
+<div class="hero">
+    <div class="about">
+        <h1>Embark</h1>
+        <h1>In Your</h1>
+        <h1>Coding</h1>
+        <h1>Journey</h1>
+        <p>The most efficient way to learn programming, and create the project of your dreams. </p>
+        <button onclick="document.getElementById('our-product').scrollIntoView({ behavior: 'smooth' })">OUR PRODUCT</button>
     </div>
-    <div class="hero">
-        <div class="about">
-            <h1>Embark</h1>
-            <h1>In Your</h1>
-            <h1>Coding</h1>
-            <h1>Journey</h1>
-            <p>The most efficient way to learn programming, and create the project of your dreams. </p>
-            <button>OUR PRODUCT</button>
-        </div>
-        <div class="hero-image-container">
+    <div class="hero-image-container">
             <img src="{% static 'website/images/computer-hero.png' %}" alt="hero image" class="computer-hero-image">
             <img src="{% static 'website/images/github-logo.png' %}" alt="hero image" class="github-hero-image">
             <img src="{% static 'website/images/python-logo.png' %}" alt="hero image" class="python-hero-image">
@@ -54,7 +30,7 @@
         </div>
     </div>
     
-    <div class="course-structure-container">
+    <div class="course-structure-container" id="our-product">
         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="1028" viewBox="0 0 46 1028" fill="none">
             <path d="M20.8674 1027.13C22.0424 1028.3 23.9419 1028.29 25.11 1027.12L44.1463 1007.97C45.3144 1006.79 45.3089 1004.89 44.1339 1003.73C42.959 1002.56 41.0595 1002.56 39.8913 1003.74L22.9702 1020.76L5.95033 1003.84C4.77535 1002.67 2.87586 1002.67 1.7077 1003.85C0.539542 1005.02 0.545069 1006.92 1.72005 1008.09L20.8674 1027.13ZM17 0.00872935L19.9826 1025.01L25.9825 1024.99L23 -0.00872935L17 0.00872935Z" fill="#FFC91A"/>
         </svg>
@@ -101,46 +77,7 @@
     <div class="schedule-box">
         <p class="ready-invitation">are you ready?</p>
         <h2 class="invitation">be a part of the next big thing</h2>
-        <button href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5" class="meeting-button">Schedule a meeting today</button>
+        <button onclick="window.location.href = 'https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5'" class="meeting-button">Schedule a meeting today</button>
     </div>
-
-    <div class="footer">
-        <div class="footer-col">
-            <p class="footer-col-title codelabs-title">Code Labs Academy</p>
-            <div class="col-content">
-                <a href="" class="footer-link">Home</a>
-                <a href="" class="footer-link">About</a>
-                <a href="" class="footer-link">Course</a>
-                <a href="" class="footer-link">Benefits</a>
-            </div>
-        </div>
-        <div class="footer-col">
-            <p class="footer-col-title">Content</p>
-            <div class="col-content">
-                <a href="" class="footer-link">Browse</a>
-                <a href="" class="footer-link">Projects</a>
-            </div>
-        </div>
-        <div class="footer-col">
-            <p class="footer-col-title">Contact</p>
-            <div class="col-content">
-                <a href="" class="footer-link">Email</a>
-                <a href="" class="footer-link">LinkedIn</a>
-                <a href="" class="footer-link">Instagram</a>
-                <a href="" class="footer-link">X</a>
-            </div>
-        </div>
-        <div class="footer-col">
-            <p class="footer-col-title newsletter-title">Join our newsletter</p>
-            <div class="col-content">
-                <form action="#" method="post" class="newsletter-form">
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-                    <button type="submit">SUBMIT</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <script src="{% static 'website/js/scripts.js' %}"></script>
-</body>
-</html>
+{% endblock content%}

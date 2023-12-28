@@ -1,0 +1,72 @@
+{% extends 'website/main.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="projects">
+    <div class="projects-desc desc">
+        <div class="col-60">
+            <h1>Created Projects</h1>
+            <p>Even though we offer a unique project for every student, here we present some project areas and projects we have previously created. These projects span a diverse range of interests, showcasing how programming can be beneficial for individuals from all fields and endeavors. Each project reflects our commitment to personalizing the learning experience, and demonstrates the versatility and impact of programming in various areas.</p>
+        </div>
+        <div class="col-40">
+            <img src="{% static 'website/images/project-creation.png' %}"/>
+        </div>
+    </div>
+    <div class="webscraping-desc desc">
+        <div class="col-60">
+            <h2>Webscraping</h2>
+            <p>Python Web Scraper: Dive into Python's web scraping libraries and unlock vast automated possibilities. This project equips you with the skills for automated data gathering, analysis, and application integration, streamlining tasks like market research and content aggregation. Start your journey to mastering Python web scraping, and harness its potential for diverse real-world applications.
+            </p>
+            <p><span class="product-subheader">Art History Image Archive</span><br>
+                A web scraper for art history students to collect artwork images and descriptions from museum websites and digital galleries. It categorizes images by era, artist, and style, serving as a visual resource for art study and comparison.<br>
+                <span class="product-subheader">Business Market Trends Analyzer</span><br>
+               A tool for business students to scrape market trends, industry reports, and financial news from various online sources. It provides insights into market dynamics and industry developments, useful for market research and business analysis.<br>
+               
+               <span class="product-subheader">Political Science Legislation Tracker</span><br>
+               A scraper designed for political science students to track and collect data on legislative bills and political debates from government and news websites. It categorizes information by country and policy area, aiding in the analysis of political and legislative trends.
+               </p>
+        </div>
+        <div class="col-40">
+            <img src="{% static 'website/images/project-creation.png' %}"/>
+        </div>
+    </div>
+    
+    <div class="machine-desc desc">
+        <div class="col-60">
+            <h2>Machine Learning</h2>
+            <p>Python Machine Learning: Embark on an explorative journey into Python's machine learning landscape to unleash powerful predictive capabilities. This project is designed to provide you with hands-on experience in training, testing, and deploying machine learning models using Python's robust libraries like scikit-learn, TensorFlow, and Keras. You'll gain skills in data preprocessing, feature engineering, and model selection, crucial for applications in areas such as data analysis, natural language processing, and image recognition. Begin your path to mastering Python machine learning and apply these skills to a variety of challenging and innovative real-world scenarios.
+            </p>
+            <p><span class="product-subheader">Health Event Prediction from Wearable Data</span><br>
+                Create a machine learning model that processes data from wearable health devices to predict vital health events. This could involve detecting irregular heart rhythms or elevated stress levels, offering valuable insights for preventive healthcare.<br>
+               
+                <span class="product-subheader">Customer Sentiment Analysis for Business Insights</span><br>
+               Develop a model using natural language processing to analyze and categorize customer feedback from reviews and social media. This tool can assess customer sentiment, providing businesses with critical insights into customer satisfaction and areas for improvement.<br>
+               
+               <span class="product-subheader"></span>Automated Real Estate Valuation Tool</span><br>
+                Build a machine learning application that estimates real estate values based on location, property size, amenities, and market data. This tool assists in providing quick, data-driven appraisals for real estate professionals and potential buyers.
+               </p>
+        </div>
+        <div class="col-40">
+            <img src="{% static 'website/images/project-creation.png' %}"/>
+        </div>
+    </div>
+    
+    <div class="algo-desc desc">
+        <div class="col-60">
+            <h2>Algorithmic Trading</h2>
+            <p><span class="product-subheader">Python Trading Bot with QuantConnect</span><br>
+                Venture into the dynamic world of algorithmic trading by building a Python-based trading bot using QuantConnect. This project offers a hands-on approach to understanding financial markets, algorithm development, and backtesting strategies. You'll learn to leverage QuantConnect's powerful platform to access market data, implement trading algorithms, and evaluate their performance. By mastering Python programming and QuantConnect's API, you'll acquire the skills to create and optimize trading bots for real-time trading, risk management, and portfolio optimization. Embark on this journey to blend financial knowledge with coding expertise, opening doors to the future of automated trading.
+               </p>
+        </div>
+        <div class="col-40">
+            <img src="{% static 'website/images/project-creation.png' %}"/>
+        </div>
+    </div>
+    
+
+
+</div>
+
+{% endblock content%}
