@@ -178,6 +178,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 83px;
     background: #8D8DDA;
     color: #FFF;
+    border:transparent;
     
     /* SUB HEADER */
     font-family: Outfit;
@@ -687,7 +688,7 @@ button:hover{
         background: #8D8DDA;
     }
     .header{
-        padding:1em;
+        padding:1em 1em;
         gap:0;
         justify-content:space-between;
     }
@@ -705,6 +706,10 @@ button:hover{
     .navbar{
         display: none;
     }
+    .about{
+        display:flex;
+        flex-direction:column;
+    }
     .about h2{
         color: #FFF;
         font-family: Outfit;
@@ -713,6 +718,40 @@ button:hover{
         font-weight: 700;
         line-height: 100%; /* 57px */
         text-transform: capitalize;
+    }
+    .hero-image-container{
+        float: left;
+        width: 150px;    
+        height: 150px;    
+        left:60%;
+        top:30%;
+        position: absolute;
+    }
+    .computer-hero-image{
+        width: 150px;
+        left:0;
+    }
+    .hero{
+        margin-top: 5em;
+        gap:0;
+        flex-direction: column;
+    }
+    .hero p{
+        max-width: 80%;
+    }
+    .hero button{
+        align-self: center;
+        display: inline;
+        margin: 0 auto;
+    }
+    .course-structure-container{
+        margin:0;
+    }
+    .program-slideshow{
+        margin-top: 20px;
+        min-height: 512px;
+        border-radius: 20px;
+        background: rgba(144, 145, 220, 0.20);
     }
     /* Additional mobile styles go here */
 
