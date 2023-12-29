@@ -1,6 +1,8 @@
-<div class="header">
-    {% load static %}
-    <img src="{% static 'website/images/logo.png' %}" alt="Code Labs Academy Logo" class="logo">
+{% load static %}
+<div class="header desktop-nav">
+    <a href="{% url 'home' %}">
+        <img src="{% static 'website/images/logo.png' %}"  alt="Code Labs Academy Logo" class="logo">
+    </a>
     <div class="navbar">
         <a href="{% url 'about' %}" class="navbar-ref">ABOUT</a>
         <a href="{% url 'product' %}" class="navbar-ref">PRODUCTS</a>
@@ -8,6 +10,18 @@
         <a href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5" class="navbar-ref schedule-button"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
             <circle cx="8.5" cy="9" r="8.5" fill="#9091DC"/>
         </svg>SCHEDULE A MEETING</a>
+        <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000" id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png" alt="Book an appointment with Juan Raul using Setmore"/></a>
+    </div>
+</div>
+<div class="header mobile-nav">
+    <a href="{% url 'home' %}">
+        <img src="{% static 'website/images/mobile-logo.png' %}"  alt="Code Labs Academy Logo" class="logo">
+    </a>
+    <button type="button" class="navbar-burger"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#FFC91A" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#FFC91A" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#FFC91A" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+    <div class="navbar">
+        <a href="{% url 'about' %}" class="navbar-ref">ABOUT</a>
+        <a href="{% url 'product' %}" class="navbar-ref">PRODUCTS</a>
+        <a href="{% url 'contact' %}" class="navbar-ref">CONTACT</a>
         <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000" id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png" alt="Book an appointment with Juan Raul using Setmore"/></a>
     </div>
 </div>
