@@ -13,6 +13,7 @@ body, h1, h2, h3, p, ul, li, a, .container, img {
 }
 
 body{
+    position: relative;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -81,6 +82,7 @@ body::-webkit-scrollbar-thumb{
     height: 679px;
     flex-shrink: 0;
     filter: blur(153px);
+    z-index: -1;
 }
 
 .first-circle,.fourth-circle{
@@ -91,23 +93,27 @@ body::-webkit-scrollbar-thumb{
 }
 
 .first-circle{
-    left: 7.84%;
-    top: -319px;
+    left: 8%;
+    top: -8%;
 }
 .second-circle{
-    left: 86.875%;
-    top: 574px;
+    left: 88%;
+    top: 12%;
 
 }
 .third-circle{
     left: -34%;
-    top: 2065px;
+    top: 55%;
 
 }
 .fourth-circle{
     left: 81.875%;
-    top: 3348px;
+    bottom: 0%;
 
+}
+
+.desktop > *,.mobile> *{
+    z-index: 1;
 }
 
 .header{
@@ -662,8 +668,15 @@ button:hover{
 @media screen and (max-width: 767px) {
     .mobile{
         display: block;
+        overflow-x: hidden;
     }
-    .desktop{
+    .mobile-footer{
+        display:flex;
+    }
+    .content, body{
+        overflow-x: hidden;
+    }
+    .desktop, .desktop-footer{
         display:none;
     }
     .mobile-nav{
@@ -724,7 +737,7 @@ button:hover{
         width: 150px;    
         height: 150px;    
         left:60%;
-        top:30%;
+        top:12%;
         position: absolute;
     }
     .computer-hero-image{
@@ -749,17 +762,148 @@ button:hover{
     }
     .program-slideshow{
         margin-top: 20px;
-        min-height: 512px;
+        min-height: 600px;
         border-radius: 20px;
         background: rgba(144, 145, 220, 0.20);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:2em;
+        position: relative;
     }
+    .newsletter-form, .newsletter-col{
+        display:none;
+    }
+    .footer-col-title{
+        display: none;
+    }
+    .invitation{
+        color: #FFF;
+        text-align: center;
+
+        /* SUB HEADER */
+        font-family: Outfit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27.5px; /* 137.5% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        width: 80%;
+    }
+    .schedule-box{
+        margin: 64px 0;
+        padding: 2em 1em;
+    }
+    .meeting-button{
+        padding: 1em 2em;
+    }
+
+    body{
+        position: relative;
+    }
+
+    .first-circle {
+        left: -50%;
+        top: -8%;
+    }
+
+    .second-circle {
+        left: 50%;
+        top: 12%;
+    }
+
+    .third-circle {
+        left: -80%;
+        top: 55%;
+    }
+    .fourth-circle {
+        left: 50%;
+        bottom: 0%;
+    }
+
+    .features-container{
+        margin: 64px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);;
+        gap: 16px;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+        border-radius: 110px;
+        border: 0 transparent;
+        background: rgba(144, 145, 220, 0.20);
+        border:2px solid #FFC91A90;
+        /* background: linear-gradient(315deg, #ABD9D9 0%, #5151C6 100%), linear-gradient(180deg, #8D8DDA 0%, #E5E5E5 100%); */
+    }
+    .feature-title{
+        color: #e2e2ea;
+        font-family: Outfit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .video-container{
+        min-height: 280px;
+        border: 4px solid #e2e2ea;
+        border-radius: 30px;
+        opacity: 0.3;
+        background: #8D8DDA;
+    }
+    .slide{
+        display: none;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        /* padding: 2em; */
+    }
+    .slide > *{
+        margin: 8px 0;
+    }
+    .slide p{
+        text-align: justify;
+    }
+    .slide img{
+        width:140px
+    }
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active {
+        background-color: #717171;
+    }
+    .nav-buttons{
+        position: absolute;
+        border-radius: 20px;
+        /* opacity: 0.1; */
+        background-color: #D9D9D916;
+        padding:0.5em;
+        bottom: 1em;
+    }
+    
     /* Additional mobile styles go here */
 
 }
 
 /* Responsive styles for desktop devices */
 @media screen and (min-width: 768px) {
-    .mobile{
+    .mobile,.mobile-footer{
         display: none;
     }
     .desktop{

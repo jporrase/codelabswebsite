@@ -80,10 +80,9 @@
         <button onclick="window.location.href = 'https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5'" class="meeting-button">Schedule a meeting today</button>
     </div>
 </div>
-<script src="{% static 'website/js/scripts.js' %}"></script>
 
 <div class="mobile">
-
+    
     <div class="hero">
         <div class="about">
             <h2>Embark</h2>
@@ -94,15 +93,51 @@
             <button onclick="document.getElementById('our-product').scrollIntoView({ behavior: 'smooth' })">OUR PRODUCT</button>
         </div>
         <div class="hero-image-container">
-                <img src="{% static 'website/images/computer-hero.png' %}" alt="hero image" class="computer-hero-image">
+            <img src="{% static 'website/images/computer-hero.png' %}" alt="hero image" class="computer-hero-image">
         </div>
     </div>
-                
+    
     <div class="course-structure-container" id="our-product">
         <p class="program-title">Program Structure</p>
         <div class="program-slideshow">
+            <div class="slide fade">
+                <img src="{% static 'website/images/python-logo.png' %}" alt="featured program">
+                <span class="program-title">python crash course</span>
+                <p class="program-description"> Starting with Python basics, you'll learn about syntax, variables, and essential data structures like lists and dictionaries. We'll cover control structures and loops for flow management, progressing to writing your own functions for reusable code.</p>
+            </div>
+            <div class="slide fade">
+                <img src="{% static 'website/images/github-logo.png' %}" alt="featured program">
+                <span class="program-title">repository management</span>
+                <p class="program-description"> Guide you to create your virtual GitHub repository, manage it, use branches, and know everything you need to know. </p>
+            </div>
+            <div class="slide fade">
+                <img src="{% static 'website/images/project-creation.png' %}" alt="featured program">
+                <span class="program-title">project Creation</span>
+                <p class="program-description">On this part of the course, students will receive personalized mentorship from experienced instructors, enabling them to dive deeper into their specific interests, be it AI, gaming, or web development. This guidance helps refine their projects, ensuring a richer, more nuanced learning experience.</p>
+            </div>
             
+            <!-- Add more slides as needed -->
+            
+            <!-- Navigation buttons -->
+            <div class="nav-buttons">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
+    </div>
+    
+    <div class="features-container">
+        <div class="feature"><span class="feature-title">One to One <br> Mentoring</span></div>
+        <div class="feature"><span class="feature-title">Portfolio <br> Booster</span></div>
+        <div class="feature"><span class="feature-title">Project <br> Oriented</span></div>
+        <div class="feature"><span class="feature-title">Foundation <br> For Growth</span></div>
+        <div class="feature"><span class="feature-title">Professional <br> Learning</span></div>
+        <div class="feature"><span class="feature-title">Tailored <br> Projects</span></div>
+    </div>
+    
+    <div class="video-container">
+        
     </div>
     
     <div class="schedule-box">
@@ -110,7 +145,7 @@
         <h2 class="invitation">be a part of the next big thing</h2>
         <button onclick="window.location.href = 'https://booking.setmore.com/scheduleappointment/54f87408-6393-4c4d-8d9d-5d85eef1a2c5'" class="meeting-button">Schedule a meeting today <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
             <circle cx="7.5" cy="8" r="7.5" fill="#8D8DDA"/>
-          </svg></button>
+        </svg></button>
     </div>
 </div>
 {% endblock content%}
