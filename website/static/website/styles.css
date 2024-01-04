@@ -1,6 +1,10 @@
 /* styles.css */
 
 /* Basic Reset */
+
+html{
+    overflow-x: hidden;
+}
 body, h1, h2, h3, p, ul, li, a, .container, img {
     margin: 0;
     padding: 0;
