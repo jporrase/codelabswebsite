@@ -733,7 +733,7 @@ button:hover::not(.navbar-burger){
 
 
     .content{
-        padding:36% 6%;
+        padding:12% 6%;
     }
     .header{
         background-color: #8D8DDA25;
@@ -861,8 +861,7 @@ button:hover::not(.navbar-burger){
     }
 
     .third-circle {
-        left: -80%;
-        top: 55%;
+       display: none;
     }
     .fourth-circle {
         left: 50%;
@@ -872,8 +871,10 @@ button:hover::not(.navbar-burger){
     .features-container{
         margin: 64px 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);;
-        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        justify-items: center; /* Center items horizontally */
+        align-items: center;
     }
 
     .feature{
