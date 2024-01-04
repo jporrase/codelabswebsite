@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     transition: all ease-in-out;
 }
-button:hover{
+button:hover::not(.navbar-burger){
     background: #FFC91A!important;
     color: #224471 !important;;
 
@@ -640,8 +640,13 @@ button:hover{
     box-sizing: border-box;
 }
 .col-40{
+    content: " ";
+    position: relative;
+    min-height: 100%;
     flex:2;
     box-sizing: border-box;
+    width: 100%;
+    flex-grow: 1;
 }
 
 /* Optional: Add margin to create space between columns */
@@ -663,6 +668,42 @@ button:hover{
     line-height: 27.5px; /* 137.5% */
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.product-image{
+    position: relative;
+    width: 200px!important;
+}
+
+.m1{
+    transform: translateX(0);
+}
+
+.m2{
+    transform: translateX(100%);
+}
+
+.m3{
+    transform: translateX(0);
+}
+
+.m4{
+    transform: translateX(100%);
+}
+
+.m5{
+    
+    transform: translateX(0);
+}
+
+.m6{
+    transform: translateX(70%);
+}
+.m7{
+    top:0;
+    /* transform: translateY(-50%); */
+
+    
 }
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 767px) {
@@ -690,17 +731,11 @@ button:hover{
     .content{
         padding:36% 6%;
     }
-    .header::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.15;
-        background: #8D8DDA;
+    .header{
+        background-color: #8D8DDA25;
     }
     .header{
+        position: relative;
         padding:1em 1em;
         gap:0;
         justify-content:space-between;
@@ -718,6 +753,13 @@ button:hover{
     }
     .navbar{
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #8D8DDA25;
+        padding: 15px;
+        top:100%;
     }
     .about{
         display:flex;

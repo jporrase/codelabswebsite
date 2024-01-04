@@ -29,6 +29,11 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+function toggleNavbar() {
+    const navbarLinks = document.getElementById("navbar");
+    navbarLinks.style.display = (navbarLinks.style.display === "flex") ? "none" : "flex";
+}
+
 // Wait for the DOM to fully load before running the scripts
 document.addEventListener('DOMContentLoaded', (event) => {
 
