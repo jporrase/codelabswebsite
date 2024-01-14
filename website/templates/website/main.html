@@ -50,6 +50,7 @@
                 <p class="footer-col-title newsletter-title">Join our newsletter</p>
                 <div class="col-content">
                     <form action="#" method="post" class="newsletter-form">
+                        {% csrf_token %}
                         <input type="email" id="email" name="email" placeholder="Email Address" required>
                         <button type="submit">SUBMIT</button>
                     </form>

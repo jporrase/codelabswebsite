@@ -57,18 +57,12 @@
         <h2 class="read-testimonials">Read what others have to say</h2>
         <div class="testimonial-boxes-container">
             <div class="testimonial-card">
-                <img src="{% static 'website/images/cole.png' %}" alt="" class="testimonial-profile">
-                <p class="testimonial-name">OLIVIA COLE</p>
                 <p class="testimonial">"It really helped my son create his own virtual portfolio and projects. A real boost if you're applying to a competitive college."</p>
             </div>
             <div class="testimonial-card">
-                <img src="{% static 'website/images/white.png' %}" alt="" class="testimonial-profile">
-                <p class="testimonial-name">EVAN WHITE</p>
                 <p class="testimonial">"The project-oriented classes really helped me not only learn how to code, but also use it in real-life scenarios. The best investment I've ever made."</p>
             </div>
             <div class="testimonial-card">
-                <img src="{% static 'website/images/miller.png' %}" alt="" class="testimonial-profile">
-                <p class="testimonial-name">JHON MILLER</p>
                 <p class="testimonial">"Learning how to manage and create a project with GitHub has opened so many professional doors for me and showed me how to collaborate in professional environments. Great course."</p>
             </div>
         </div>
@@ -90,28 +84,31 @@
             <h2>Coding</h2>
             <h2>Journey</h2>
             <p>The most efficient way to learn programming, and create the project of your dreams. </p>
-            <button onclick="document.getElementById('our-product').scrollIntoView({ behavior: 'smooth' })">OUR PRODUCT</button>
+            <button onclick="console.log('fck u');document.getElementById('our-product-mobile').scrollIntoView({ behavior: 'smooth' })">OUR PRODUCT</button>
         </div>
         <div class="hero-image-container">
             <img src="{% static 'website/images/computer-hero.png' %}" alt="hero image" class="computer-hero-image">
         </div>
     </div>
     
-    <div class="course-structure-container" id="our-product">
+    <div class="course-structure-container" id="our-product-mobile">
         <p class="program-title">Program Structure</p>
         <div class="program-slideshow">
             <div class="slide fade">
                 <img src="{% static 'website/images/python-logo.png' %}" alt="featured program">
+                <span class="course-percentage">50%</span>
                 <span class="program-title">python crash course</span>
                 <p class="program-description"> Starting with Python basics, you'll learn about syntax, variables, and essential data structures like lists and dictionaries. We'll cover control structures and loops for flow management, progressing to writing your own functions for reusable code.</p>
             </div>
             <div class="slide fade">
                 <img src="{% static 'website/images/github-logo.png' %}" alt="featured program">
+                <span class="course-percentage">10%</span>
                 <span class="program-title">repository management</span>
                 <p class="program-description"> Guide you to create your virtual GitHub repository, manage it, use branches, and know everything you need to know. </p>
             </div>
             <div class="slide fade">
                 <img src="{% static 'website/images/project-creation.png' %}" alt="featured program">
+                <span class="course-percentage">40%</span>
                 <span class="program-title">project Creation</span>
                 <p class="program-description">On this part of the course, students will receive personalized mentorship from experienced instructors, enabling them to dive deeper into their specific interests, be it AI, gaming, or web development. This guidance helps refine their projects, ensuring a richer, more nuanced learning experience.</p>
             </div>

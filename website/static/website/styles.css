@@ -230,9 +230,9 @@ button:hover::not(.navbar-burger){
 
 .github-hero-image{
     right: 0;
-    bottom: 0;
-    width: 154px;
-    height: 148px;
+    bottom: 2%;
+    width: 180px;
+    height: auto;
     flex-shrink: 0;
 }
 .python-hero-image{
@@ -709,8 +709,12 @@ button:hover::not(.navbar-burger){
 
     
 }
-/* Responsive styles for mobile devices */
+
+
 @media screen and (max-width: 767px) {
+    h1{
+        font-size:4em;
+    }
     .mobile{
         display: block;
         overflow-x: hidden;
@@ -783,7 +787,7 @@ button:hover::not(.navbar-burger){
         width: 150px;    
         height: 150px;    
         left:60%;
-        top:12%;
+        top:9.5%;
         position: absolute;
     }
     .computer-hero-image{
@@ -870,6 +874,7 @@ button:hover::not(.navbar-burger){
 
     .features-container{
         margin: 64px 0;
+        padding: 1rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
@@ -943,6 +948,23 @@ button:hover::not(.navbar-burger){
         padding:0.5em;
         bottom: 1em;
     }
+    .course-percentage{
+        position: absolute;
+        left:1em;
+        top:.5em;
+        color: #9091DC;
+
+        font-family: Outfit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.5px; /* 137.5% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .projects .col-40{
+        display: none;
+    }
     
     /* Additional mobile styles go here */
 
@@ -967,6 +989,14 @@ button:hover::not(.navbar-burger){
 
     .content{
         padding:8% 13%;
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        gap: 20px; /* Adjust the gap as needed */
+        justify-content: space-between;
     }
     /* Additional desktop styles go here */
 }
