@@ -906,9 +906,7 @@ button:hover::not(.navbar-burger){
         text-align: center;
     }
     .video-container{
-        min-height: 280px;
         border: 4px solid #e2e2ea;
-        border-radius: 30px;
         opacity: 0.3;
         background: #8D8DDA;
     }
