@@ -639,8 +639,8 @@ button:hover::not(.navbar-burger){
     margin-top:16px;
 }
 .col-60{
-    padding-right: 1em;
     flex:3;
+    float:left;
     box-sizing: border-box;
 }
 .col-40{
@@ -710,10 +710,33 @@ button:hover::not(.navbar-burger){
     
 }
 
+.video-container{
+    border: 4px solid #e2e2ea;
+    background: #8D8DDA;
+}
 
+.video-container{
+    min-height: 0;
+    padding-top: 56.25%; 
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 @media screen and (max-width: 767px) {
     h1{
         font-size:4em;
+    }
+    h2{
+        font-size:3.2em;
     }
     .mobile{
         display: block;
@@ -846,6 +869,9 @@ button:hover::not(.navbar-burger){
         margin: 64px 0;
         padding: 2em 1em;
     }
+    .video-container{
+        margin: 64px 0;
+    }
     .meeting-button{
         padding: 1em 2em;
     }
@@ -905,11 +931,7 @@ button:hover::not(.navbar-burger){
         text-transform: uppercase;
         text-align: center;
     }
-    .video-container{
-        border: 4px solid #e2e2ea;
-        opacity: 0.3;
-        background: #8D8DDA;
-    }
+    
     .slide{
         display: none;
         flex-direction: column;
@@ -983,6 +1005,9 @@ button:hover::not(.navbar-burger){
     .desktop-nav{
         display:flex;
     }
+    .video-container{
+        margin-top:180px;
+    }
 
 
     .content{
@@ -996,5 +1021,6 @@ button:hover::not(.navbar-burger){
         gap: 20px; /* Adjust the gap as needed */
         justify-content: space-between;
     }
+
     /* Additional desktop styles go here */
 }

@@ -1,29 +1,6 @@
-let slideIndex = 0;
-
-function showSlides() {
-    let i;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 10000); // Change slide every 2 seconds (adjust as needed)
-}
-
+let slideIndex = 1; // Set the initial slide index to 1
+let touchStartX = 0;
+let touchEndX = 0;
 // Function to set the current slide
 function currentSlide(n) {
     showSlides(slideIndex = n);
@@ -32,6 +9,54 @@ function currentSlide(n) {
 function toggleNavbar() {
     const navbarLinks = document.getElementById("navbar");
     navbarLinks.style.display = (navbarLinks.style.display === "flex") ? "none" : "flex";
+}
+
+
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX;
+}
+
+function handleTouchEnd() {
+    const threshold = 50;
+
+    if (touchStartX - touchEndX > threshold) {
+        nextSlide();
+    } else if (touchEndX - touchStartX > threshold) {
+        prevSlide();
+    }
+}
+
+function nextSlide() {
+    slideIndex++;
+    if (slideIndex > 3) {
+        slideIndex = 1;
+    }
+    showSlides();
+}
+
+function prevSlide() {
+    slideIndex--;
+    if (slideIndex < 1) {
+        slideIndex = 3;
+    }
+    showSlides();
+}
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " active";
 }
 
 // Wait for the DOM to fully load before running the scripts
