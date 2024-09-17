@@ -35,10 +35,11 @@
             <path d="M20.8674 1027.13C22.0424 1028.3 23.9419 1028.29 25.11 1027.12L44.1463 1007.97C45.3144 1006.79 45.3089 1004.89 44.1339 1003.73C42.959 1002.56 41.0595 1002.56 39.8913 1003.74L22.9702 1020.76L5.95033 1003.84C4.77535 1002.67 2.87586 1002.67 1.7077 1003.85C0.539542 1005.02 0.545069 1006.92 1.72005 1008.09L20.8674 1027.13ZM17 0.00872935L19.9826 1025.01L25.9825 1024.99L23 -0.00872935L17 0.00872935Z" fill="#FFC91A"/>
         </svg>
         <h2>Course Structure</h2>
+        <br>
         <div class="program-card">
-            <img src="{% static 'website/images/python-logo.png' %}" alt="featured program">
-            <p class="program-title">python crash course</p>
-            <p class="program-description"> Starting with Python basics, you'll learn about syntax, variables, and essential data structures like lists and dictionaries. We'll cover control structures and loops for flow management, progressing to writing your own functions for reusable code. The course also introduces basic input/output operations and error handling. This foundation, taught through practical examples in Colab, prepares you for advanced programming and personalized projects.</p>
+            <img src="{% static 'website/images/coding.png' %}" alt="featured program">
+            <p class="program-title">coding crash course</p>
+            <p class="program-description"> We will start with a deep dive into the specific technologies and frameworks your project requires, whether it's front-end, back-end, or a combination of both. You'll learn how to effectively design and structure your project, ensuring scalability and maintainability from the  beginning. As we progress, we'll focus on key development tools, languages, and design patterns, giving you the technical skills needed to build your project.</p>
         </div>
         <div class="program-card">
             <img src="{% static 'website/images/github-logo.png' %}" alt="featured program">
@@ -99,27 +100,31 @@
     <div class="course-structure-container" id="our-product-mobile">
         <p class="program-title">Program Structure</p>
         <div class="program-slideshow" ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)" ontouchend="handleTouchEnd()">
+            
+            <!-- Slide 1: Coding Crash Course -->
             <div class="slide fade">
-                <img src="{% static 'website/images/python-logo.png' %}" alt="featured program">
+                <img src="{% static 'website/images/coding.png' %}" alt="featured program">
                 <span class="course-percentage">50%</span>
-                <span class="program-title">python crash course</span>
-                <p class="program-description"> Starting with Python basics, you'll learn about syntax, variables, and essential data structures like lists and dictionaries. We'll cover control structures and loops for flow management, progressing to writing your own functions for reusable code.</p>
+                <span class="program-title">coding crash course</span>
+                <p class="program-description"> We will start with a deep dive into the specific technologies and frameworks your project requires, whether it's front-end, back-end, or a combination of both. You'll learn how to effectively design and structure your project, ensuring scalability and maintainability from the beginning. As we progress, we'll focus on key development tools, languages, and design patterns, giving you the technical skills needed to build your project.</p>
             </div>
+    
+            <!-- Slide 2: Repository Management -->
             <div class="slide fade">
                 <img src="{% static 'website/images/github-logo.png' %}" alt="featured program">
                 <span class="course-percentage">10%</span>
                 <span class="program-title">repository management</span>
-                <p class="program-description"> Guide you to create your virtual GitHub repository, manage it, use branches, and know everything you need to know. </p>
+                <p class="program-description"> Guide you to create your virtual GitHub repository, manage it, use branches, and know everything you need to know.</p>
             </div>
+    
+            <!-- Slide 3: Project Creation -->
             <div class="slide fade">
                 <img src="{% static 'website/images/project-creation.png' %}" alt="featured program">
                 <span class="course-percentage">40%</span>
                 <span class="program-title">project Creation</span>
                 <p class="program-description">On this part of the course, students will receive personalized mentorship from experienced instructors, enabling them to dive deeper into their specific interests, be it AI, gaming, or web development. This guidance helps refine their projects, ensuring a richer, more nuanced learning experience.</p>
             </div>
-            
-            <!-- Add more slides as needed -->
-            
+    
             <!-- Navigation buttons -->
             <div class="nav-buttons">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -128,6 +133,10 @@
             </div>
         </div>
     </div>
+    
+            
+            <!-- Add more slides as needed -->
+    
     
     <div class="features-container">
         <div class="feature"><span class="feature-title">One to One <br> Mentoring</span></div>

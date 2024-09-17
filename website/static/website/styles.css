@@ -296,24 +296,54 @@ button:hover::not(.navbar-burger){
         scale:100%;
       }
   }
-.program-card{
-    view-timeline-name: --card;
-    view-timeline-axis: block;
-    animation-timeline: --card;
-    animation-range: entry 30% cover 60%;
-    animation-fill-mode: both;
-    animation-name:show;
-    border-radius: 50px;
-    background: #22245D;
-    margin:24px 0;
+  .program-card {
+    width: 100%; /* Ensure all program cards take up 100% of the parent container */
+    max-width: 1500px; /* Set a maximum width to ensure consistency across all cards */
+    margin: 0 auto; /* Center the card */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px 0;
     text-align: center;
-    gap:16px;
-    min-height: 308px;
+    background-color: #22245D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    transition: transform 0.3s ease;
+    height: auto; /* Ensure all cards take up the same height */
+    min-height: 300px; /* Set a minimum height to handle content overflow */
+    box-sizing: border-box;
+    margin-bottom: 25px;
 }
+
+.program-card:hover {
+    transform: scale(1.05); /* Optional: Add a hover effect */
+}
+
+.program-card img {
+    width: 100px; /* Adjust image size to fit nicely within the card */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.program-card p.program-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FEC917;
+}
+
+.program-card p.program-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFF;
+    flex-grow: 1; /* This ensures that the text expands to fill the card height */
+}
+
+/* Ensures all cards are vertically aligned at the bottom */
+.program-card:last-child {
+    margin-bottom: 0;
+}
+
 .program-card img{
     width:100px;
     height: auto;
