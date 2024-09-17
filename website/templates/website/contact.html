@@ -1,6 +1,5 @@
 {% extends 'website/main.html' %}
 
-
 {% block content %}
 {% load static %}
 
@@ -10,12 +9,25 @@
             <h1>Contact Us</h1>
             <p>Our team is ready to assist you and provide the support you need. Whether you’re interested in enrolling in our courses, have inquiries about our offerings, or need technical assistance, we’re here to help. Don’t hesitate to get in touch with us.
                 Let’s take your coding journey to new heights together!<br><br>
-                <span class="product-subheader">Email:</span> contact-us@codelacademy.com<br>
-                <span class="product-subheader">Whatsapp:</span>+507 62814215
+                <span class="product-subheader">Email:</span> contact-us@codelacademy.com
             </p>
+
+            <!-- Contact Form -->
+            <form method="post" action="{% url 'send_email' %}">
+                {% csrf_token %}
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="project-link">Send Message</button>
+            </form>
         </div>
-        
     </div>
 </div>
 
-{% endblock content%}
+{% endblock content %}

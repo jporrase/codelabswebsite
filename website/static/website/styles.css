@@ -710,10 +710,152 @@ button:hover::not(.navbar-burger){
     
 }
 
-.video-container{
-    border: 4px solid #e2e2ea;
-    background: #8D8DDA;
+/* Project Section Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 10px;
+    padding-bottom: 4em;
 }
+
+.student-card {
+    background-color: rgba(34, 36, 93, 0.8); /* Matches the current color scheme */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.student-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 0; /* Remove circular shape */
+    margin-bottom: 20px;
+    object-fit: contain; /* Ensure the image fits inside the container */
+}
+
+.student-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FEC917; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ABD9D9;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #ABD9D9;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #FFC91A;
+    color: #224471; /* Darker color for hover */
+    border-color: #FFC91A;
+}
+
+
+/* Projects Modification */
+/* Adjust image sizing to ensure it fits the container */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/* Set consistent width for all dropdown blocks */
+.student-card details {
+    width: 100%; /* Ensures dropdown takes full width of the card */
+    max-width: 400px; /* Optional, you can adjust max-width if necessary */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.student-card summary {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.student-card details p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    color: #FFF;
+}
+
+@media (max-width: 767px) {
+    .student-card details {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Style for the dropdown details and summary */
+details {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+details[open] summary {
+    color: #FFC91A;
+}
+
+summary {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+details p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    color: #FFF;
+}
+
+/* Improve the appearance on hover for summary elements */
+summary:hover {
+    color: #ABD9D9;
+}
+
+
 
 .video-container{
     min-height: 0;
@@ -1023,4 +1165,41 @@ button:hover::not(.navbar-burger){
     }
 
     /* Additional desktop styles go here */
+
+    
 }
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFF;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+button.send-button {
+    background-color: #FFC91A;
+    color: #224471;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.send-button:hover {
+    background-color: #FEC917;
+}
+

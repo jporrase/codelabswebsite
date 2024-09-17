@@ -1,0 +1,39 @@
+{% extends 'website/main.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<div class="student-projects">
+    <div class="projects-desc desc">
+        <div class="col-60">
+            <h1>Student Projects & Stories</h1>
+            <br>
+            <p>Here are some inspiring stories and projects from our talented students. Learn about their journey and explore the amazing work they've accomplished.</p>
+        </div>
+    </div>
+
+    <div class="project-grid">
+        <!-- Student Story 1 -->
+        <div class="student-card">
+            <h2>Ana Sofia</h2>
+            <p>Ana Sofia created a project library focused on environmental challenges after completing Code Labs. Her projects include an air quality dashboard, a waste management tool, and an energy tracker, all offering data-driven solutions for sustainability.</p>
+            <a href="https://anasofiade07.github.io/environmental-data-project/main.html" class="project-link">View Ana's Project</a>
+        </div>
+
+        <!-- Student Story 2 -->
+        <div class="student-card">
+            <h2>Adrian</h2>
+            <p>Adrian used his full-stack skills in JavaScript, CSS, and HTML to build an interactive site with a responsive design. He integrated Python to generate dynamic charts, showcasing his ability to create both functional and visually appealing web applications.</p>
+            <a href="https://panini0805.github.io/Project/CL_Home.html" class="project-link">View Adrian's Project</a>
+        </div>
+
+        <!-- Student Story 3 -->
+        <div class="student-card">
+            <h2>Henri</h2>
+            <p>Henri developed a Python bot for Discord using the discord.py library. The bot automates various tasks, such as user commands, moderating, API calling for information regarding user interaction. It showcases Henri's knowledge in the field. </p>
+            <a href="https://github.com/jporrase/henribot" class="project-link">View Henri's Project</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
