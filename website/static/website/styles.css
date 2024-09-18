@@ -319,6 +319,8 @@ button:hover::not(.navbar-burger){
     transform: scale(1.05); /* Optional: Add a hover effect */
 }
 
+
+
 .program-card img {
     width: 100px; /* Adjust image size to fit nicely within the card */
     height: auto;
@@ -377,70 +379,65 @@ button:hover::not(.navbar-burger){
     left:-6%;
     top:8%;
 }
-.testimonials-container{
+
+.testimonials-container {
     margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding:00;
     text-align: center;
 }
-.testimonials-title{
-    color: #ABD9D9;
 
-    /* SUB HEADER */
+.testimonials-title {
+    color: #ABD9D9;
     font-family: Outfit;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 27.5px; /* 137.5% */
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
-.read-testimonials{
+
+.read-testimonials {
     width: 50%;
     margin-bottom: 64px;
 }
-.testimonial-card{
+
+.testimonial-boxes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-card {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.08);
-    width: 33.333%;  
+    width: 33.333%;
     padding: 20px;
     min-height: 333px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.testimonial-boxes-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:12px
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial-profile{
-    width: 100px;
-    height: auto;
-    border-radius: 100%;
-    mix-blend-mode: luminosity;
-    margin-bottom: 12px;
+/* Hover effect for testimonials */
+.testimonial-card:hover {
+    transform: scale(1.05); /* Scale up slightly */
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten the background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
-.testimonial-name{
+
+.testimonial {
     color: #FFF;
-
-/* SUB HEADER */
-    font-family: Outfit;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27.5px; /* 137.5% */
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.5;
 }
+
 .schedule-box{
     margin:128px 0;
     display: flex;
